@@ -7,7 +7,7 @@ The MobileNetV2 is pre-trained on ImageNet. We add a fully connect layer to it a
 
 
 ### Dependencies
-python 3.6.7/n
+python 3.6.7<br />
 numpy 1.13.3
 dlib 19.4
 keras 2.2.4
