@@ -7,11 +7,11 @@ The MobileNetV2 is pre-trained on ImageNet. We add a fully connect layer to it a
 
 
 ### Dependencies
-python 3.6.7
-numpy 1.13.3
-dlib 19.4
-keras 2.2.4
-opencv 3.3.0
+python 3.6.7<br />
+numpy 1.13.3<br />
+dlib 19.4<br />
+keras 2.2.4<br />
+opencv 3.3.0<br />
 imutils 0.4.6
 
 ## Running the tests
@@ -22,8 +22,8 @@ to input the image directory to get age prediction.
 
 ## References
 
-[1]’Imdb-Wiki dataset’, https://data.vision.ee.ethz.ch/cvl/rrothe/imdb-wiki/
-[2] ‘UTK face dataset’, https://susanqq.github.io/UTKFace/
+[1]’Imdb-Wiki dataset’, https://data.vision.ee.ethz.ch/cvl/rrothe/imdb-wiki/<br />
+[2] ‘UTK face dataset’, https://susanqq.github.io/UTKFace/<br />
 [3] ‘MobileNetV2: Inverted Residuals and Linear Bottlenecks’, https://arxiv.org/abs/1801.04381
 
 
