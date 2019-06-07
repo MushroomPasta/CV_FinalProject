@@ -1,6 +1,5 @@
 import dlib
 import cv2
-import numpy as np
 from imutils import face_utils
 def hog_face(path):
     rgb = cv2.imread(path)

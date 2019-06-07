@@ -1,10 +1,10 @@
-import matplotlib.pyplot as plt 
+
 from HOG import hog_face
 import mobileNet as k
 
 if __name__ == '__main__':
     print('start loading model...(this may take a minute)')
-    model = k.load_mdl('weight/weights-improvement-05.hdf5')
+    model = k.load_mdl('D:/CVProject/keras-vggface/CVFPgit/CV_FinalProject/weight/weights-improvement-05.hdf5')
     print('finish loading.')
     #'D:/CVProject/keras-vggface/CVFPgit/img/zj.jpg'
     while True:

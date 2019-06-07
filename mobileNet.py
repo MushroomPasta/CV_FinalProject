@@ -1,30 +1,17 @@
-import tensorflow as tf
-import os
-import time
-from tqdm import tqdm
-from PIL import Image, ImageDraw, ImageFont
-os.chdir('D:/CVProject/keras-vggface/keras_vggface')
-import load_pickle
 import numpy as np
 from keras.applications.mobilenetv2 import MobileNetV2
 from keras.layers import Dense, Input, Dropout
 from keras.models import Model
-from keras.optimizers import Adam
-from sklearn.utils import shuffle
-from keras.callbacks import ModelCheckpoint
-from sklearn.model_selection import train_test_split
 import keras
 from keras.models import load_model
 import cv2
-from os import listdir
-from os.path import isfile, join
-def mini_batch(features,labels,mini_batch_size):
-    l = features.shape[0]
-    while True:
-        for ndx in range(0, l, mini_batch_size):
-            low = ndx
-            high = min((ndx + mini_batch_size), l)
-            yield shuffle(features[low:high,:], labels[low:high,:])
+#def mini_batch(features,labels,mini_batch_size):
+#    l = features.shape[0]
+#    while True:
+#        for ndx in range(0, l, mini_batch_size):
+#            low = ndx
+#            high = min((ndx + mini_batch_size), l)
+#            yield shuffle(features[low:high,:], labels[low:high,:])
 def build_model(target_size):
     input_tensor = Input(shape=(target_size, target_size, 3))
     base_model = MobileNetV2(
