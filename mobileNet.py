@@ -87,7 +87,7 @@ def predict_age(img):
 #    y_2[np.arange(len(y_1)),y_1] = 1
 #    X_train, X_test, y_train, y_test = train_test_split(x, y_2, test_size=0.05, random_state=42)
 #    model = build_model(224)
-#    model = load_model('weights-improvement-05.hdf5')
+#    model = load_model('D:/CVProject/keras-vggface/CVFPgit/CV_FinalProject/weight/weights-improvement-05.hdf5')
     
     
    
@@ -130,13 +130,15 @@ def predict_age(img):
 #    accu = tp/total
 #    #load predict image
 #    
-#    mypath = 'D:/CVProject/keras-vggface/'
-#    test_files = [f for f in listdir(mypath+'test_face/') if isfile(join(mypath+'test_face/', f))]
+#    from os import listdir
+#    from os.path import isfile, join
+#    mypath = 'D:/CVProject/'
+#    test_files = [f for f in listdir(mypath+'test_img/') if isfile(join(mypath+'test_img/', f))]
 #    age_lst = []
 #    
 #    for file in test_files:
-#        img,test_img = load_resize(mypath+'test_face/'+file)
-#        cv2.imwrite(mypath+'resized_test/'+file[:-3]+'jpg',img.reshape(224,224,3))
+#        img,test_img = load_resize(mypath+'test_img/'+file)
+##        cv2.imwrite(mypath+'resized_test/'+file[:-3]+'jpg',img.reshape(224,224,3))
 #        pre1 = model.predict(img)
 #        age = int(age_predict_2(pre1))
 #        age_lst.append(age)
